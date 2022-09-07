@@ -1,0 +1,23 @@
+pipeline {
+
+    agent any
+
+
+
+    stages {
+
+        stage('Build a word') {
+
+            steps {
+
+                echo 'Hello Linux...'
+
+            }
+
+        }    
+
+ }
+
+   
+
+}
