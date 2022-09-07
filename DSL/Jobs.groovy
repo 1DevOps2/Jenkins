@@ -4,7 +4,7 @@ pipelineJob('Configuring-GitHub') {
             scm {
                 git {
                     remote {
-                        github('1DevOps2/MyJenkins')
+                        github('1DevOps2/Jenkins')
                     }
                   branch('*/main')
                 }
@@ -23,7 +23,7 @@ pipelineJob('Print-Words') {
             scm {
                 git {
                     remote {
-                        github('1DevOps2/MyJenkins')
+                        github('1DevOps2/Jenkins')
                     }
                   branch('*/main')
                 }
@@ -43,7 +43,7 @@ pipelineJob('Print-Words') {
             scm {
                 git {
                     remote {
-                        github('1DevOps2/MyJenkins')
+                        github('1DevOps2/Jenkins')
                     }
                   branch('*/main')
                 }
@@ -62,7 +62,7 @@ pipelineJob('share-lib') {
             scm {
                 git {
                     remote {
-                        github('1DevOps2/MyJenkins')
+                        github('1DevOps2/Jenkins')
                     }
                   branch('*/main')
                 }
