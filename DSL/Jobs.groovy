@@ -12,7 +12,7 @@ pipelineJob('Configuring-GitHub') {
   						scm('* * * * *')    
 						}
             }
-            scriptPath('Jenkinsfile')
+            scriptPath('JenkinsFiles/Jenkinsfile')
         }
     }
 }
@@ -31,30 +31,13 @@ pipelineJob('Print-Words') {
   						scm('H/5 * * * *')    
 						}
             }
-            scriptPath('Jenkinsfile1')
+            scriptPath('JenkinsFiles/Jenkinsfile1')
         }
     }
 }
 
 
-pipelineJob('Print-Words') {
-    definition {
-        cpsScm {
-            scm {
-                git {
-                    remote {
-                        github('1DevOps2/Jenkins')
-                    }
-                  branch('*/main')
-                }
-              triggers {          
-  						scm('H/5 * * * *')    
-						}
-            }
-            scriptPath('Jenkinsfile1')
-        }
-    }
-}
+
 
 pipelineJob('share-lib') {
     definition {
@@ -70,7 +53,7 @@ pipelineJob('share-lib') {
   						scm('H/5 * * * *')    
 						}
             }
-            scriptPath('Jenkinsfile2')
+            scriptPath('JenkinsFiles/Jenkinsfile2')
         }
     }
 }
