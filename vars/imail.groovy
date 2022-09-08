@@ -17,7 +17,5 @@ def call() {
                      
 }
 
-  def MyInfo ()
-{
-}
+  
 
