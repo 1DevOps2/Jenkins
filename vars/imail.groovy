@@ -9,8 +9,8 @@ def call() {
                        mimeTye: 'text/html',
                        subject: "[Jenkins] Started ${jobName}",
                        to: "${mailRecipients}",
-                       from: "${mailSender}",
-                       replyTo: "${mailRecipients}",
-                       recipientProviders: [[$class: 'CulpritsRecipientProvider']]
+                       from: "${mailSender}"
+                       
+                       
 }
 
