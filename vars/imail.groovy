@@ -5,7 +5,7 @@ def call() {
 //                   def mailSender = 'anas.rehman@technonies.com'
 //                    def jobName = currentBuild.fullDisplayName
                    //emailext body: '''${SCRIPT, template="groovy-html.template"}''',
-                    mail from: "jenkins@diginctechnologies.com",
+                    mail from: "anas.rehman@technonies.com",
                       to: "tehchnonies@gmail.com", 
                       subject: "APPROVAL REQUIRED FOR $JOB_NAME" , 
                       body: """Build $BUILD_NUMBER required an approval. Go to http://13.95.115.63:8080/job/aprroval-job/ for more info."""
