@@ -1,4 +1,6 @@
-def mailme (){
+#!/usr/bin/env groovy
+/* groovylint-disable-next-line MethodReturnTypeRequired, NoDef */
+def mailme () {
   
   script {
                 mail from: "anas.rehman@technonies.com", to: "tehchnonies@gmail.com, danialshah419@gmail.com", subject: "APPROVAL REQUIRED FOR $JOB_NAME" , body: """Build $BUILD_NUMBER required an approval. Go to http://20.171.65.204:8080/job/Aprrove-me/ for more info."""
