@@ -4,7 +4,7 @@ def call() {
                     mail from: "anas.rehman@technonies.com",
                     to: "tehchnonies@gmail.com", 
                     subject: "APPROVAL REQUIRED FOR $JOB_NAME" , 
-                    body: """Build $BUILD_NUMBER required an approval. Go to http://13.95.115.63:8080/job/aprroval-job/ for more info."""
+                    body: """Build $BUILD_NUMBER required an approval. Go to http://20.171.65.204:8080/view/Shared%20Library/job/Email-Approval/ for more info."""
  
                     def deploymentDelay = input id: 'Deploy', 
                       message: 'Deploy to production?', 
@@ -13,8 +13,9 @@ def call() {
                       name: 'deploymentDelay')]
                       sleep time: deploymentDelay.toInteger(),
                       unit: 'HOURS'
-
-                       
-                       
+                     
+                     
 }
+
+  def MyInfo ()
 
