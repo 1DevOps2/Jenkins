@@ -1,8 +1,8 @@
 #!/usr/bin/env groovy
 /* groovylint-disable-next-line MethodReturnTypeRequired, NoDef */
-def call() {
-                    mail from: "anas.rehman@technonies.com",
-                    to: "tehchnonies@gmail.com", 
+def call(String sender="anas.rehman@technonies.com", String reciever="tehchnonies@gmail.com") {
+                    mail from: "${sender}",
+                    to: "${reciever}", 
                     subject: "APPROVAL REQUIRED FOR $JOB_NAME" , 
                     body: """Build $BUILD_NUMBER required an approval. Go to http://20.171.65.204:8080/view/Shared%20Library/job/Email-Approval/ for more info."""
  
