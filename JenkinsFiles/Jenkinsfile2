@@ -1,5 +1,28 @@
 @Library('Shared-Library')_
-stage('Demo') {
-echo 'Hello world'
-sayHello ()
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+                
+            }
+        }
+        
+          stage('Shared-lib') {
+            steps {
+                
+                imail("anas.rehman@technonies.com", "1devops2@gmail.com")
+                
+            }
+        }
+        
+          stage('Shared') {
+            steps {
+                MyInfo()
+                
+            }
+        }
+    }
 }
